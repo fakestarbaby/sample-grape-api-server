@@ -15,6 +15,7 @@ group :doc do
 end
 
 group :development do
+  gem 'guard-rspec', require: false
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end
