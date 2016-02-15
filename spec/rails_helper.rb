@@ -50,9 +50,9 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 
-  # For database rewinder
   config.before :suite do
     DatabaseRewinder.clean_all
+    FactoryGirl.reload
   end
 
   config.after :each do
