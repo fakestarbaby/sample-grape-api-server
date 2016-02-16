@@ -15,10 +15,15 @@ group :doc do
 end
 
 group :development do
+  gem 'guard-rspec', require: false
   gem 'spring'
+  gem 'spring-commands-rspec'
   gem 'web-console', '~> 2.0'
 end
 
 group :development, :test do
   gem 'byebug'
+  gem 'database_rewinder'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
 end
