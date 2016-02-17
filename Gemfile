@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.2.3'
+
 gem 'rails', '4.2.5.1'
 
 gem 'coffee-rails', '~> 4.1.0'
@@ -26,4 +28,8 @@ group :development, :test do
   gem 'database_rewinder'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
