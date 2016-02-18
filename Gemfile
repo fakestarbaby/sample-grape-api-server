@@ -5,6 +5,7 @@ ruby '2.2.3'
 gem 'rails', '4.2.5.1'
 
 gem 'coffee-rails', '~> 4.1.0'
+gem 'grape'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'mysql2', '>= 0.3.13', '< 0.5'
