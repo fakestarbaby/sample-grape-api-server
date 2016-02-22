@@ -39,3 +39,7 @@ bower.json
 
 # Ignore local env file.
 .envrc
+
+# Ignore IntelliJ IDEA settings
+.idea/
+sample-rails-api-server.iml
