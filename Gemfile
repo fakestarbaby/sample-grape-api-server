@@ -21,6 +21,7 @@ group :development do
   gem 'guard-rspec', require: false
   gem 'spring'
   gem 'spring-commands-rspec'
+  gem 'terminal-notifier-guard'
   gem 'web-console', '~> 2.0'
 end
 
