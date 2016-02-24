@@ -35,6 +35,7 @@ end
 group :test do
   gem 'faker'
   gem 'json_spec'
+  gem 'rspec-request_describer'
 end
 
 group :production do
