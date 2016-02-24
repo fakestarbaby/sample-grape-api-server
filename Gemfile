@@ -21,6 +21,7 @@ group :development do
   gem 'guard-rspec', require: false
   gem 'spring'
   gem 'spring-commands-rspec'
+  gem 'terminal-notifier-guard'
   gem 'web-console', '~> 2.0'
 end
 
@@ -29,6 +30,12 @@ group :development, :test do
   gem 'database_rewinder'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
+end
+
+group :test do
+  gem 'faker'
+  gem 'json_spec'
+  gem 'rspec-request_describer'
 end
 
 group :production do

@@ -1,6 +1,5 @@
 FactoryGirl.define do
-  factory :product do
-    name "MyString"
+  factory :product, class: 'Product' do
+    name Faker::App.name
   end
-
 end
