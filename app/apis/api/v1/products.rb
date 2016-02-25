@@ -14,7 +14,7 @@ module API
           requires :id, type: Integer, desc: 'Product id.'
         end
         get ':id' do
-          Product.find(params[:id])
+          present Product.find(params[:id]), with: Entity::V1::Products
         end
       end
     end

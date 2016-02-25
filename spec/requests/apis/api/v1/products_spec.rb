@@ -15,6 +15,8 @@ describe API::V1::Products do
 
     it "return 200 with a product" do
       is_expected.to eq 200
+      expect(response.body).to have_json_path('name')
+      expect(response.body).to be_json_eql(product.name.to_json).at_path('name')
     end
   end
 end
