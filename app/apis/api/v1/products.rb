@@ -7,6 +7,15 @@ module API
         get do
           Product.all
         end
+
+        # GET /api/v1/product/:id
+        desc 'Return a product'
+        params do
+          requires :id, type: Integer, desc: 'Product id.'
+        end
+        get ':id' do
+          present Product.find(params[:id]), with: Entity::V1::Products
+        end
       end
     end
   end

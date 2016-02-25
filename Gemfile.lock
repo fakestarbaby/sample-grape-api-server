@@ -87,6 +87,9 @@ GEM
       rack-accept
       rack-mount
       virtus (>= 1.0.0)
+    grape-entity (0.4.8)
+      activesupport
+      multi_json (>= 1.3.2)
     guard (2.13.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, <= 4.0)
@@ -256,6 +259,7 @@ DEPENDENCIES
   faker
   figaro
   grape
+  grape-entity
   guard-rspec
   jquery-rails
   json_spec
