@@ -31,12 +31,12 @@ end
 group :development, :test do
   gem 'byebug'
   gem 'database_rewinder'
+  gem 'faker'
   gem 'factory_girl_rails'
   gem 'rspec-rails'
 end
 
 group :test do
-  gem 'faker'
   gem 'json_spec'
   gem 'rspec-request_describer'
 end
