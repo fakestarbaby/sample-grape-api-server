@@ -4,7 +4,11 @@ ruby '2.2.3'
 
 gem 'rails', '4.2.5.1'
 
+gem 'activeadmin', github: 'activeadmin'
+gem 'cancan'
 gem 'coffee-rails', '~> 4.1.0'
+gem 'devise'
+gem 'draper'
 gem 'figaro'
 gem 'grape'
 gem 'grape-entity'
@@ -12,9 +16,11 @@ gem 'grape-swagger'
 gem 'grape-swagger-rails'
 gem 'jquery-rails'
 gem 'mysql2', '>= 0.3.13', '< 0.5'
+gem 'pundit'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
+
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
